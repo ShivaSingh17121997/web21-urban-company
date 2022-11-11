@@ -1,114 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
 
-       *{box-sizing: border-box;
-        margin: 0px;
-        padding: 0px;
+        }
+
+        header>img {
+            width: 80px;
+            height: 70px;
+            cursor: pointer;
+        }
+
+        li {
+            font-family: "Monstserrat", sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            color: white;
+        }
+
+        header {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(https://getquickair.com.au/blog/content/images/size/w2000/2021/11/How-to-Clean-AC-Coils-Easily.jpeg);
+            border: 1px solid white;
+            background-size: cover;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px 10px;
+        }
+
+        .nav li {
+            display: inline-block;
+            padding: 0px 20px;
+
+        }
+
+        .headertext {
+            max-width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .headertext span {
+            font-size: 16px;
+            font-family: "Monstserrat", sans-serif;
+        }
+
+        .headertext h1 {
+            font-size: 40px;
+            font-family: "Monstserrat", sans-serif;
+            letter-spacing: 2px;
+            padding: 30px;
+        }
+
+        .headertext h4 {
+            font-family: "Monstserrat", sans-serif;
+            padding: 20px;
+        }
+
+        .city {
+            width: 100px;
+            height: 50px;
+            padding: 20px;
+            border-radius: 5px;
+            border: 0px;
+
+        }
+
+        #search {
+            width: 600px;
+            height: 50px;
+            padding: 20px;
+            border-radius: 5px;
+            border: 0px;
+        }
+
+        .container1,.container2 {
+            width: 60%;
+            height: 200px;
+            padding: 20px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 5px;
+            align-items: center;
+            margin-top: -100px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;        }
+
+        .container1 div,.container2 div {
+
+            cursor: pointer;
+            width: 160px;
+            height: 112px;
+            padding: 24px;
+            align-items: center;
+            text-align: center;
+            border-radius: 10px;
+
+
+
+        }
+
+        .container1 div img ,.container2 div img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-bottom: 5px;
+
+        }
+
+        .container1 div p, .container2 div p {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        div div div:hover {
+            color: black;
+            cursor: pointer;
+            background-color: rgb(238, 238, 238);
+        }
+
+        .homeserv{
+            text-align: center;
+            font-size: 22px;
+            height: 200px;
         
-       }
-       header>img{
-        width: 80px;
-        height: 70px;
-        cursor: pointer;
-       }
-       li{
-        font-family:"Monstserrat",sans-serif ;
-        font-weight: 500;
-        font-size: 18px;
-        color: white;
-       }
+            margin: 50px;
+            font-family: "Monstserrat", sans-serif;
+            letter-spacing: 1px;
+        }
+        /* .sec1{
+            display: flex;
+            justify-content: space-evenly;
+           
+        }
+        .sec1>div{
+          
+            background-image: url("https://bestcleanerssurrey.co.uk/wp-content/uploads/2020/05/what-does-disinfection-cleaning-include.jpg");
+           
+            background-size: contain;
+        } */
+        #sec1{
+            display: flex;
+            
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+           padding: 20px;
+           color: white;
+        }
+        .sec1div{
+            background-image: url("https://img.freepik.com/premium-photo/spring-cleaning-concept-with-supplies-house-cleaning-products-pile-household-chore-concept-light-blue-background-copy-space_136595-10263.jpg?w=2000");
+            
+           
+            height: 30vh;
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            margin-bottom: 20px;
+            color: white;
+        }
 
-       header{
-        width: 100%;
-        height: 100vh;
-        background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)) ,url(https://getquickair.com.au/blog/content/images/size/w2000/2021/11/How-to-Clean-AC-Coils-Easily.jpeg);
-        border: 1px solid white;
-        background-size: cover;
-        display: flex;
-        justify-content: space-between;
-        align-items:flex-start;
-        padding: 20px 10px;
-       }
-
-       .nav li{
-        display: inline-block;
-        padding: 0px 20px;
-        
-       }
-
-       .headertext{
-        max-width: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        text-align: center;
-        color: white;
-       }
-
-       .headertext span{
-        font-size: 16px;
-        font-family:"Monstserrat",sans-serif ;
-       }
-
-       .headertext h1{
-        font-size: 40px;
-        font-family:"Monstserrat",sans-serif ;
-        letter-spacing: 2px;
-        padding: 30px;
-       }
-
-       .headertext h4{
-        font-family:"Monstserrat",sans-serif ;
-        padding: 20px;
-       }
-
-       .city{
-        width: 100px;
-        height: 50px;
-        padding: 20px;
-        border-radius: 5px;
-        border: 0px;
-        
-       }
-
-       #search{
-        width: 600px;
-        height: 50px;
-        padding: 20px;
-        border-radius: 5px;
-        border: 0px;
-       }
-       
     </style>
 </head>
+
 <body>
-   
+
+   <div>
     <header>
-        <img class="logo" src="https://document-export.canva.com/AZHXw/DAFRYXAZHXw/3/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20221109%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221109T064856Z&X-Amz-Expires=14505&X-Amz-Signature=466a287a975558468ab0d3d3bbd20528bc09e1218fce662c116900003f26ce00&X-Amz-SignedHeaders=host&response-expires=Wed%2C%2009%20Nov%202022%2010%3A50%3A41%20GMT" alt="">
+        <img class="logo"
+            src="https://document-export.canva.com/AZHXw/DAFRYXAZHXw/3/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20221109%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221109T064856Z&X-Amz-Expires=14505&X-Amz-Signature=466a287a975558468ab0d3d3bbd20528bc09e1218fce662c116900003f26ce00&X-Amz-SignedHeaders=host&response-expires=Wed%2C%2009%20Nov%202022%2010%3A50%3A41%20GMT"
+            alt="">
         <nav>
             <ul class="nav">
                 <li> <b> Blog</b></li>
                 <li>
-                   <u> <b>Register As A Professional</b></u></li>
+                    <u> <b>Register As A Professional</b></u>
+                </li>
                 <li><b>Login/Sign Up</b></li>
             </ul>
         </nav>
         <section class="headertext">
             <span>Home / Delhi-Ncr</span>
             <h1>HOME SERVICE, ON DEMAND.</h1>
-            <input type="text" class="city" placeholder="Delhi NCR"/> 
+            <input type="text" class="city" placeholder="Delhi NCR" />
             <input type="search" name="" id="search" placeholder="Search for Service">
-            <h4><u>Women's Therapies</u>, <u>Salon for Men</u>,<u> Men's Tharapies</u>  etc</h4>
-            
+            <h4><u>Women's Therapies</u>, <u>Salon for Men</u>,<u> Men's Tharapies</u> etc</h4>
+
         </section>
-       
+
     </header>
+    <div class="container1">
+        <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/1858/1858270.png" alt="">
+            <p>Salon For Women</p>
+        </div>
+        <div>
+            <img src="https://www.svgrepo.com/show/271253/woman-hair.svg" alt="">
+            <p>Hair,Skin & Nails</p>
+        </div>
+        <div>
+            <img src="https://selfpause.com/wp-content/uploads/2019/12/74908148_415320612741428_3003650761021194240_n.png"
+                alt="">
+            <p>Women's <br> Therapies</p>
+        </div>
+        <div>
+            <img src="https://symbols.getvecta.com/stencil_68/11_man-thick-beard.946f6de429.svg" alt="">
+            <p>Salon For Men</p>
+        </div>
+        <div>
+            <img src="https://draculatheme.com/static/icons/used/pack-9/024-candle.svg" alt="">
+            <p>Men's Therapies</p>
+        </div>
+    </div>
+    <div class="homeserv">
+        <h1>Home Services</h1>
+    </div>
+
+    <div class="container2">
+        <div>
+            <img src="https://cdn.shopify.com/s/files/1/0099/1622/products/WrenchIcon_b7a6dfb9-422a-4bc7-ac53-f55a72dac31e_200x.png?v=1416795899" alt="">
+            <p>Salon For Women</p>
+        </div>
+        <div>
+            <img src="https://p.kindpng.com/picc/s/153-1532732_painting-roller-brush-png-transparent-png.png" alt="">
+            <p>Hair,Skin & Nails</p>
+        </div>
+        <div>
+            <img src="https://school.iqdoodle.com/wp-content/uploads/2018/09/how-to-doodle-Vacuum-Cleaner_05-269x300.jpg"
+                alt="">
+            <p>Women's <br> Therapies</p>
+        </div>
+        <div>
+            <img src="https://sterileguys.com/wp-content/uploads/2020/10/Coronavirus-covid19-spread-disinfectant-spray-sterile-512.png" alt="">
+            <p>Salon For Men</p>
+        </div>
+        <div>
+            <img src="https://lowcostaccounts.co.uk/wp-content/uploads/2020/10/Who-we-help-Sole-Trader-e1602605529782.png" alt="">
+            <p>Men's Therapies</p>
+        </div>
+    </div>
+   </div>
+
+ <!-- <section class="sec1">
+    <div> 
+         <img src="https://img.freepik.com/free-photo/hand-cleaning_23-2148104602.jpg?w=2000" alt=""> -->
+        <!-- <h1>Shine your bathroom deserves</h1>
+        <p>Bathroom clearing</p>
+        <button>Book now</button>
+    </div>
+    <div>
+        <h1>Shine your bathroom deserves</h1>
+        <p>Bathroom clearing</p>
+        <button>Book now</button>
+    </div>
+    <div>
+        <h1>Shine your bathroom deserves</h1>
+        <p>Bathroom clearing</p>
+        <button>Book now</button>
+    </div>
+    <div>
+        <h1>Shine your bathroom deserves</h1>
+        <p>Bathroom clearing</p>
+        <button>Book now</button>
+    </div>
+ </section> -->
+
+<section id="sec1">
+    <div class="sec1div">
+        <h2>Shine your bathroom deserves</h2>
+        <p>Bathroom cleaning</p>
+        <button>Book now</button>
+    </div>
+    <div> <div class="sec1div">
+        <h2>Shine your bathroom deserves</h2>
+        <p>Bathroom cleaning</p>
+        <button>Book now</button>
+    </div></div>
+    <div> <div class="sec1div">
+        <h2>Shine your bathroom deserves</h2>
+        <p>Bathroom cleaning</p>
+        <button>Book now</button>
+    </div></div>
+    <div> <div class="sec1div">
+        <h2>Shine your bathroom deserves</h2>
+        <p>Bathroom cleaning</p>
+        <button>Book now</button>
+    </div></div>
+</section>
 </body>
+
 </html>
