@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <a href="sidebar.html"></a>
+    <link rel="stylesheet" href="cart.html">
     <style>
         * {
             box-sizing: border-box;
@@ -273,14 +275,26 @@
 
         }
 
-        #footer{
+        #footer {
             background-color: black;
             color: white;
             font-size: 18px;
             letter-spacing: 2px;
-            text-align: left; 
-           padding: 20px;
+            text-align: left;
+            padding: 20px;
 
+
+        }
+
+
+        #navbar1 {
+            align-items: flex-start;
+            right: -300px;
+            background-color: white;
+        }
+
+        #navbar1.active {
+            right: 0px
         }
     </style>
 </head>
@@ -289,6 +303,10 @@
 
     <div>
         <header>
+
+
+
+
             <img class="logo"
                 src="https://document-export.canva.com/AZHXw/DAFRYXAZHXw/3/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20221112%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221112T064856Z&X-Amz-Expires=18105&X-Amz-Signature=740d6a7ff020c975988458fdb89ebeac1593ea13b48ffe96d3c35ef58172c4be&X-Amz-SignedHeaders=host&response-expires=Sat%2C%2012%20Nov%202022%2011%3A50%3A41%20GMT"
                 alt="">
@@ -298,7 +316,10 @@
                     <li>
                         <u> <b>Register As A Professional</b></u>
                     </li>
-                    <li><b>Login/Sign Up</b></li>
+                    <button id="toggle1" onclick="show()">Login/Sign Up</button>
+                   
+
+
                 </ul>
             </nav>
             <section class="headertext">
@@ -514,31 +535,31 @@
 
         <section id="sec5">
             <h1>Cleaning & Pest Control</h1>\
-            
+
             <div class="sec5div">
                 <div>
                     <img src="https://www.gannett-cdn.com/presto/2021/08/10/USAT/8d981c2d-2ecf-4137-8878-c18351a66825-cleanbathroom.png?width=980&height=552&fit=crop&format=pjpg&auto=webp"
                         alt="">
                     <h4>Bathroom And Kitchen Cleaning</h4>
-                    
+
                 </div>
                 <div>
                     <img src="https://5.imimg.com/data5/PK/OA/MY-38373342/home-deep-cleaning-sofa-cleaning-bathroom-cleaning-500x500.jpg"
                         alt="">
                     <h4>Full Home Cleaning</h4>
-                    
+
                 </div>
                 <div>
                     <img src="https://media.istockphoto.com/id/949224886/photo/person-cleaning-sofa-with-vacuum-cleaner.jpg?s=612x612&w=0&k=20&c=wJSVBmugid-fmIZHjKYyc-jsNYjv_ETTZy0d1CjH4fQ="
                         alt="">
                     <h4>Sofa & Carpet Cleaning</h4>
-                    
+
                 </div>
                 <div>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW3rHyfcC6c_kS3NCfdx9PlWt5qQWqzrxaqAxWYeLl3KdigllcgXRgl1u--A34Wdk8JtM&usqp=CAU"
                         alt="">
                     <h4>Cockroach, Ant & General Pest Control</h4>
-                    
+
                 </div>
             </div>
         </section>
@@ -552,56 +573,56 @@
                     <img src="https://thumbs.dreamstime.com/b/female-hairdresser-making-hairstyle-to-cute-woman-beauty-salon-standing-lovely-young-68096342.jpg"
                         alt="">
                     <h4>Salon Luxa</h4>
-                    
+
                 </div>
                 <div>
                     <img src="https://media.istockphoto.com/id/546796802/photo/the-hands-of-young-barber-making-haircut-to-attractive-man.jpg?s=612x612&w=0&k=20&c=vV7E4ggKsw95wPjyB_tDUDeQ8_EzwBnF1F6J0l6oZjE="
                         alt="">
                     <h4>Salon For Men Royal</h4>
-                    
+
                 </div>
                 <div>
                     <img src="https://image.shutterstock.com/image-photo/hairdresser-doing-haircut-women-hairdressing-260nw-466136912.jpg"
                         alt="">
                     <h4>Spa luxe</h4>
-                    
+
                 </div>
                 <div>
                     <img src="https://www.royalmalemassage.com/wp-content/uploads/2021/01/massage-service-in-delhi-1030x686.jpg"
                         alt="">
                     <h4>Massage Therapy For Men Royale</h4>
-                    
+
                 </div>
             </div>
         </section>
 
         <section id="sec7">
             <h1>Home Repairs</h1>\
-            
+
             <div class="sec7div">
                 <div>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM4n50UHVuTcVu2EATVT2xtZCR1rf-R6ITZQ&usqp=CAU"
                         alt="">
                     <h4>Furniture Making, Upholstery & Polish</h4>
-                    
+
                 </div>
                 <div>
                     <img src="https://img.freepik.com/premium-photo/carpenter-working-with-wood-marking-plank-with-pencil-taking-measurements-cut-piece-wood-make-piece-furniture-carpentry-workshop-closeup-view_194143-9283.jpg?w=2000"
                         alt="">
                     <h4>Carpenters</h4>
-                    
+
                 </div>
                 <div>
                     <img src="https://content.jdmagicbox.com/comp/lucknow/u9/0522px522.x522.160206102736.d1u9/catalogue/ashutosh-electrical-thakurganj-lucknow-electricians-kb33q5a7dj.jpg?clr=422424"
                         alt="">
                     <h4>Electricians</h4>
-                    
+
                 </div>
                 <div>
                     <img src="https://www.zehnservices.com/wp-content/uploads/2020/02/plumber-at-home-in-kolkata.jpg"
                         alt="">
                     <h4>Plumbers</h4>
-                    
+
                 </div>
             </div>
         </section>
@@ -610,53 +631,64 @@
             About Us UC Impact Terms & Conditions Privacy policy <br>
             <br>
             Interest_based Advertising Anti Discrimination policy Partner Welfare policy <br>
-                <br>
+            <br>
             Information Security Policy Statement & Objective Blog Reviews NearMe <br>
             <br>
             Careers gift Cards Contact Us QuickLinks
 
-       <br> -------------------------------------------------------------------------------------- <br>
+            <br> -------------------------------------------------------------------------------------- <br>
 
-       Serving in 
-       <br>
-       USA
-       <br>
-       Austin Dallas New York city
-       <br>
-       IND
-       <br>
-        Agra Ahmedabad Alwar Amritsar Aurangabad Bangalore Bhopal <br>
-        <br>Bhubneswar Chandigarh Tricty Chennai Coimbatore Cuttak <br>
-        <br>
-        Feharadun Delhi NCR Guntur Guwahati Gwalior Hyderabad Indore <br>
-        <br>
-        Jabalpur Jaipur Jamshedpur Jodhpur Kakinada Kanpur Karnal <br>
-        <br>
-        Kochi kolkata kota Lucjnow Ludhiana Madurai Meerut Mumbai <br>
-        <br>
-        mysore Nagpur Nashik Panipat Patana Prayagrah Pune Raipur <br>
-        <br>
-        Rajahundry Ranchi Rohaak Sonipat Surat Thiruvanathampuram <br>
-        <br>
-        Udaipur Vadodara VAranasi Vijawada Visakhapatanam Warangal <br>
-        <br>
-        UAE 
-        Abu Dhabi Dubai Sharjah <br>
-        <br>AUS <br>
-        Melbourne Sydney <br>
-        <br>
-        SGP <br>
-        <br>
-        singapore <br>
-        <br>
-        KSA <br>
-        <br>
-        Jeddah Riyadhbr
-        <br>__________________________________________________________________________ <br>
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        
+            Serving in
+            <br>
+            USA
+            <br>
+            Austin Dallas New York city
+            <br>
+            IND
+            <br>
+            Agra Ahmedabad Alwar Amritsar Aurangabad Bangalore Bhopal <br>
+            <br>Bhubneswar Chandigarh Tricty Chennai Coimbatore Cuttak <br>
+            <br>
+            Feharadun Delhi NCR Guntur Guwahati Gwalior Hyderabad Indore <br>
+            <br>
+            Jabalpur Jaipur Jamshedpur Jodhpur Kakinada Kanpur Karnal <br>
+            <br>
+            Kochi kolkata kota Lucjnow Ludhiana Madurai Meerut Mumbai <br>
+            <br>
+            mysore Nagpur Nashik Panipat Patana Prayagrah Pune Raipur <br>
+            <br>
+            Rajahundry Ranchi Rohaak Sonipat Surat Thiruvanathampuram <br>
+            <br>
+            Udaipur Vadodara VAranasi Vijawada Visakhapatanam Warangal <br>
+            <br>
+            UAE
+            Abu Dhabi Dubai Sharjah <br>
+            <br>AUS <br>
+            Melbourne Sydney <br>
+            <br>
+            SGP <br>
+            <br>
+            singapore <br>
+            <br>
+            KSA <br>
+            <br>
+            Jeddah Riyadhbr
+            <br>__________________________________________________________________________ <br>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+
         </section>
 </body>
 
 </html>
+
+<script>
+    let bar = document.getElementById("toggle1")
+    let nav = document.getElementById("navbar1")
+    if (bar) {
+        bar.addEventListener("click", () => {
+            nav.classList.add("active")
+        })
+    }
+
+</script>
