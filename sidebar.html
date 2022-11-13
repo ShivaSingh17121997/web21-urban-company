@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        #sidebar {
+            position: absolute;
+            width: 300px;
+            height: 100%;
+            background: gray;
+            right: -300px;
+            transition: .4s;
+
+
+        }
+
+        #sidebar.active {
+            right: 0;
+        }
+
+
+        #sidebar .toggle {
+            position: relative;
+            top: 30px;
+
+            right: 70px;
+        }
+
+        .toggle span {
+            width: 100px;
+            height: 4px;
+            border: 1px;
+            display: block;
+            margin-top: 4px;
+            font-size: 18px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar">
+        <!-- <div class="toggle" onclick="show()"> -->
+        <span>Login</span>
+    </div>
+    <h1>Please login to continue</h1>
+    <input type="number" placeholder="Your phone number" name="" id="">
+    <button>Continue</button>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function show() {
+        document.getElementById("toggle1").classList.toggle("active");
+    }
+</script>
